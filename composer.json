@@ -1,0 +1,53 @@
+{
+    "name": "dividebuy/laravel-options",
+    "description": "Your Package Description here",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "David Sivocha",
+            "email": "david.sivocha@dividebuy.co.uk"
+        }
+    ],
+    "minimum-stability": "stable",
+    "prefer-stable":true,
+    "require": {},
+    "require-dev": {
+        "illuminate/support": "^5.8",
+        "mockery/mockery": "^1.2",
+        "orchestra/database": "^3.8",
+        "orchestra/testbench": "^3.8",
+        "phpunit/phpunit": "^8.1"
+    },
+    "autoload": {
+        "files": [
+            "src/helpers.php"
+        ],
+        "psr-4": {
+            "DivideBuy\\LaravelOptions\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DivideBuy\\LaravelOptions\\Tests\\":"tests/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DivideBuy\\LaravelOptions\\LaravelOptionsServiceProvider"
+            ],
+            "aliases": {
+                "DBOptions": "DivideBuy\\LaravelOptions\\LaravelOptionsFacade"
+            }
+        }
+    }
+}
