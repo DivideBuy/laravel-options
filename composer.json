@@ -1,12 +1,17 @@
 {
     "name": "dividebuy/laravel-options",
-    "description": "Your Package Description here",
+    "description": "Global Key Value Store for Laravel",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
             "name": "David Sivocha",
-            "email": "david.sivocha@dividebuy.co.uk"
+            "email": "david.sivocha@dividebuy.co.uk",
+            "role": "Developer"
+        }, {
+            "name": "DivideBuy",
+            "email": "github@dividebuy.co.uk",
+            "role": "Management Account"
         }
     ],
     "minimum-stability": "stable",
